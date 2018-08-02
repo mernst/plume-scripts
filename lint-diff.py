@@ -138,6 +138,9 @@ with open(diff_filename) as diff:
 if relative_diff and strip_diff == 0:
     eprint("warning:", sys.argv[1], "may use relative paths but --strip-diff=0")    
 
+print("changed")
+print(changed)
+
 if len(sys.argv) == 3:
     lint_filename = sys.argv[2]
     lint = open(lint_filename)
